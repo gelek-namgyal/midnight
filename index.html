@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelek Namgyal - VS Code Theme</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loader">
+            <div class="loader-content">
+                <i class="fas fa-code"></i>
+                <span>Loading Portfolio...</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- VS Code-like Sidebar -->
+    <nav class="sidebar">
+        <div class="sidebar-top">
+            <div class="icon active" title="About">
+                <i class="far fa-user"></i>
+                <span class="icon-text">About Me</span>
+            </div>
+            <div class="icon" title="Education">
+                <i class="fas fa-graduation-cap"></i>
+                <span class="icon-text">Education</span>
+            </div>
+            <div class="icon" title="Experience">
+                <i class="fas fa-briefcase"></i>
+                <span class="icon-text">Experience</span>
+            </div>
+            <div class="icon" title="Projects">
+                <i class="far fa-folder"></i>
+                <span class="icon-text">Projects</span>
+            </div>
+            <div class="icon" title="Services">
+                <i class="fas fa-cogs"></i>
+                <span class="icon-text">Services</span>
+            </div>
+            <div class="icon" title="Skills">
+                <i class="fas fa-code"></i>
+                <span class="icon-text">Skills</span>
+            </div>
+            <div class="icon" title="Contact">
+                <i class="far fa-envelope"></i>
+                <span class="icon-text">Contact</span>
+            </div>
+        </div>
+        <div class="sidebar-bottom">
+            <div class="icon theme-toggle" title="Toggle Theme">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <span class="icon-text">Toggle Theme</span>
+            </div>
+            <div class="icon keyboard-shortcuts-btn" title="Keyboard Shortcuts">
+                <i class="fas fa-keyboard"></i>
+                <span class="icon-text">Keyboard Shortcuts</span>
+            </div>
+            <div class="icon github-link" title="GitHub">
+                <i class="fab fa-github"></i>
+                <span class="icon-text">GitHub</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- VS Code-like Explorer -->
+    <div class="explorer">
+        <div class="explorer-header">
+            <h3>EXPLORER</h3>
+        </div>
+        <div class="folder">
+            <div class="folder-header">
+                <i class="fas fa-chevron-down"></i>
+                <span>Portfolio</span>
+            </div>
+            <div class="files">
+                <div class="file active" data-content="about"><i class="far fa-file-code"></i> about</div>
+                <div class="file" data-content="education"><i class="far fa-file-code"></i> education</div>
+                <div class="file" data-content="experience"><i class="far fa-file-code"></i> experience</div>
+                <div class="file" data-content="projects"><i class="far fa-file-code"></i> projects</div>
+                <div class="file" data-content="services"><i class="far fa-file-code"></i> services</div>
+                <div class="file" data-content="skills"><i class="far fa-file-code"></i> skills</div>
+                <div class="file" data-content="contact"><i class="far fa-file-code"></i> contact</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="content">
+        <!-- Tab Bar -->
+        <div class="tabs">
+            <div class="tab active">
+                <i class="far fa-file-code"></i>
+                <span>about</span>
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+
+        <!-- Code Editor Area -->
+        <div class="editor">
+            <div class="line-numbers">
+                1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>0<br>1<br>2<br>3 <br>4 <br>1<br>2<br>3 <br>
+            </div>
+            <div class="editor-content">
+                <!-- About Content (initially visible) -->
+                <div class="content-section active" id="about">
+                    <!-- Hero Section -->
+                    <div class="hero-section">
+                        <div class="hero-left">
+                            <div class="status-badge">
+                                <span class="pulse"></span>
+                                Available for opportunities
+                            </div>
+                            <h1>Gelek Namgyal Tamang</h1>
+                            <h2>Web Developer</h2>
+                            <p class="bio">Crafting digital experiences with clean code and creative solutions.
+                                Specialized in building modern web applications.</p>
+                            <div class="social-links">
+                                <a href="https://github.com/gelek-namgyal" target="_blank" class="social-btn">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+                                <a href="https://www.linkedin.com/in/gelek-namgyal-189683340/" target="_blank" class="social-btn">
+                                    <i class="fab fa-linkedin"></i>
+                                    LinkedIn
+                                </a>
+                                <a href="mailto:geleknamgyal51@gmail.com" class="social-btn">
+                                    <i class="fas fa-envelope"></i>
+                                    Email
+                                </a>
+                            </div>
+                        </div>
+                        <div class="hero-right">
+                            <div class="profile-frame">
+                                <img src="img/gelek (1).jpg" alt="Profile">
+                                <div class="frame-decoration"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Content -->
+                <div class="content-section" id="projects">
+                    <div class="projects-grid">
+                        <!-- Row 1: Bus Reservation & Bookstore -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="img/bus.png" alt="Bus Reservation System">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-btn">
+                                            <i class="fab fa-github"></i>
+                                            Code
+                                        </a>
+                                        <a href="#" class="project-btn">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Bus Reservation System</h3>
+                                    <i class="fas fa-bus"></i>
+                                </div>
+                                <p class="project-desc">
+                                    A complete bus booking solution with real-time seat selection, 
+                                    ticket management, and admin dashboard. Features user authentication, 
+                                    booking history, and payment integration.
+                                </p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>PHP</span>
+                                    <span>MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="img/bokstore.jpg" alt="Bookstore Management">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-btn">
+                                            <i class="fab fa-github"></i>
+                                            Code
+                                        </a>
+                                        <a href="#" class="project-btn">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Bookstore Management</h3>
+                                    <i class="fas fa-book-open"></i>
+                                </div>
+                                <p class="project-desc">
+                                    Digital bookstore platform with inventory management, 
+                                    user reviews, shopping cart, and order processing. 
+                                    Includes admin panel for book and user management.
+                                </p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>PHP</span>
+                                    <span>MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Row 2: Note App & BookShare -->
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="img/projectnoteapp.png" alt="Note Taking App">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-btn">
+                                            <i class="fab fa-github"></i>
+                                            Code
+                                        </a>
+                                        <a href="#" class="project-btn">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>Note Taking App</h3>
+                                    <i class="fas fa-sticky-note"></i>
+                                </div>
+                                <p class="project-desc">
+                                    Feature-rich note-taking application with markdown support, 
+                                    tags, categories, and real-time search. Includes data persistence 
+                                    and user authentication.
+                                </p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>PHP</span>
+                                    <span>MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="img/bokshare.jpg" alt="BookShare Platform">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-btn">
+                                            <i class="fab fa-github"></i>
+                                            Code
+                                        </a>
+                                        <a href="#" class="project-btn">
+                                            <i class="fas fa-external-link-alt"></i>
+                                            Demo
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-content">
+                                <div class="project-header">
+                                    <h3>BookShare Platform</h3>
+                                    <i class="fas fa-share-alt"></i>
+                                </div>
+                                <p class="project-desc">
+                                    Community-driven book sharing platform where users can lend, 
+                                    borrow, and exchange books. Features user ratings, reviews, 
+                                    and messaging system.
+                                </p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>PHP</span>
+                                    <span>MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services Content -->
+                <div class="content-section" id="services">
+                    <div class="services-container">
+                        <div class="services-header">
+                            <h2>My Services</h2>
+                            <p>Professional solutions tailored to your needs</p>
+                        </div>
+                        
+                        <div class="services-grid">
+                            <!-- Website Development -->
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <h3>Website Development</h3>
+                                <p class="service-description">
+                                    Custom website development with modern technologies and responsive design.
+                                </p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Responsive Design</li>
+                                    <li><i class="fas fa-check"></i> Modern Technologies</li>
+                                    <li><i class="fas fa-check"></i> SEO Optimization</li>
+                                    <li><i class="fas fa-check"></i> Performance Focus</li>
+                                </ul>
+                                <a href="#contact" class="service-btn">Get Started</a>
+                            </div>
+
+                            <!-- Content Writing -->
+                            <div class="service-card featured">
+                                <div class="service-badge">Popular</div>
+                                <div class="service-icon">
+                                    <i class="fas fa-pen-fancy"></i>
+                                </div>
+                                <h3>Content Writing</h3>
+                                <p class="service-description">
+                                    Engaging and SEO-optimized content for your website, blog, and social media.
+                                </p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Blog Posts</li>
+                                    <li><i class="fas fa-check"></i> Website Content</li>
+                                    <li><i class="fas fa-check"></i> Social Media Posts</li>
+                                    <li><i class="fas fa-check"></i> SEO Optimization</li>
+                                </ul>
+                                <a href="#contact" class="service-btn">Get Started</a>
+                            </div>
+
+                            <!-- Custom Applications -->
+                            <div class="service-card">
+                                <div class="service-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <h3>Custom Applications</h3>
+                                <p class="service-description">
+                                    Tailored software solutions to streamline your business processes.
+                                </p>
+                                <ul class="service-features">
+                                    <li><i class="fas fa-check"></i> Custom Features</li>
+                                    <li><i class="fas fa-check"></i> API Integration</li>
+                                    <li><i class="fas fa-check"></i> Database Design</li>
+                                    <li><i class="fas fa-check"></i> Maintenance</li>
+                                </ul>
+                                <a href="#contact" class="service-btn">Get Started</a>
+                            </div>
+                        </div>
+
+                        <div class="services-note">
+                            <p><i class="fas fa-info-circle"></i> Contact me to discuss your project requirements and get a custom quote.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Content -->
+                <div class="content-section" id="skills">
+                    <div class="skills-container">
+                        <div class="skills-grid">
+                            <!-- Frontend Development -->
+                            <div class="skill-category">
+                                <div class="category-header">
+                                    <i class="fas fa-code"></i>
+                                    <h3>Frontend Development</h3>
+                                </div>
+                                <div class="skill-list">
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span class="skill-name">HTML5 & CSS3</span>
+                                            <div class="skill-level">
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span class="skill-name">JavaScript</span>
+                                            <div class="skill-level">
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span class="skill-name">React</span>
+                                            <div class="skill-level">
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot"></div>
+                                                <div class="level-dot"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Backend Development -->
+                            <div class="skill-category">
+                                <div class="category-header">
+                                    <i class="fas fa-server"></i>
+                                    <h3>Backend Development</h3>
+                                </div>
+                                <div class="skill-list">
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Node.js</span>
+                                            <div class="skill-level">
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot"></div>
+                                                <div class="level-dot"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span class="skill-name">PHP</span>
+                                            <div class="skill-level">
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span class="skill-name">MySQL</span>
+                                            <div class="skill-level">
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot"></div>
+                                                <div class="level-dot"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tools & Others -->
+                            <div class="skill-category">
+                                <div class="category-header">
+                                    <i class="fas fa-tools"></i>
+                                    <h3>Tools & Others</h3>
+                                </div>
+                                <div class="skill-list">
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Git & GitHub</span>
+                                            <div class="skill-level">
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span class="skill-name">Responsive Design</span>
+                                            <div class="skill-level">
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <div class="skill-info">
+                                            <span class="skill-name">UI/UX Design</span>
+                                            <div class="skill-level">
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot active"></div>
+                                                <div class="level-dot"></div>
+                                                <div class="level-dot"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Content -->
+                <div class="content-section" id="contact">
+                    <div class="contact-container">
+                        <div class="contact-header">
+                            <h2>Get In Touch</h2>
+                            <p>Let's discuss your next project or opportunity</p>
+                        </div>
+                        
+                        <div class="contact-content">
+                            <div class="contact-info">
+                                <div class="contact-card">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h3>Phone</h3>
+                                        <a href="tel:+9779767907123">+977-9767907123</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-card">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h3>Email</h3>
+                                        <a href="mailto:geleknamgyal51@gmail.com">geleknamgyal51@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="contact-card">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <h3>Location</h3>
+                                        <p>Namkha-2, Humla, Nepal</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="contact-form">
+                                <h3>Send Me a Message</h3>
+                                <form id="contactForm" onsubmit="return handleSubmit(event)">
+                                    <div class="form-group">
+                                        <input type="text" name="name" placeholder="Your Name" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" name="email" placeholder="Your Email" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                                    </div>
+                                    <button type="submit" class="submit-btn">
+                                        <i class="fas fa-paper-plane"></i>
+                                        Send Message
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/gelek.namgyal.2025/" target="_blank" class="social-link">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://x.com/GelekNamgyal2" target="_blank" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/__pema88/" target="_blank" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://github.com/gelek-namgyal" target="_blank" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gelek-namgyal-189683340/" target="_blank" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Content -->
+                <div class="content-section" id="education">
+                    <h2>Education</h2>
+                    <div class="education-timeline">
+                        <div class="education-item">
+                            <div class="education-details">
+                                <div class="point"></div>
+                                <h3>Bachelor of Computer Application/h3>
+                                <p>Asian college of higher studies</p>
+                                <p>Ekantakuna, Lalitpur</p>
+                                <p>Running</p>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-details">
+                                <div class="point"></div>
+                                <h3>+2 (Science)</h3>
+                                <p>South western state college</p>
+                                <p>Basundhara, kathmandu</p>
+                                <p>Completed: 2022</p>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-details">
+                                <div class="point"></div>
+                                <h3>SEE</h3>
+                                <p>Shree Mahabouddha Secondary school</p>
+                                <p>Namkha-4, Yalwang</p>
+                                <p>Completed: 2020</p>
+                            </div>
+                        </div>
+                        <div class="education-item">
+                            <div class="education-details">
+                                <div class="point"></div>
+                                <h3>favorite</h3>
+                                <p>Shree Tato Pani Lower Secondary schoolp></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <!-- Status Bar -->
+        <div class="status-bar">
+            <div class="status-left">
+                <span><i class="fas fa-check-circle"></i> Ready</span>
+            </div>
+            <div class="status-right">
+                <span>HTML</span>
+                <span>UTF-8</span>
+                <span>Port: 3000</span>
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
